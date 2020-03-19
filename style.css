@@ -1,0 +1,63 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgba(146, 134, 81, 0.836), rgba(81, 57, 218, 0.644));
+}
+
+#calculator{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#calculator .buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-auto-rows: 40px;
+    outline: none;
+    gap: 1px;
+}
+#calculator .buttons button{
+    cursor: pointer;
+    outline: none;
+    border: 3px solid whitesmoke;
+    font-size: large;
+    color: #1b1717e0;
+    background-color: rgba(245, 245, 245, 0.8);
+    transition: 300ms;
+}
+#calculator .buttons button:hover{
+
+    color: #000000;
+    background-color: rgba(255, 255, 255, 1);
+}
+#calculator .buttons .span-two{
+    grid-column: span 2;
+}
+#calculator .text{
+    min-height: 5rem;
+    width: 243px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 10px;
+    background-color: rgba(31, 31, 31, 0.877);
+}
+#calculator .text .previous{
+    color: rgba(233, 223, 208, 0.952);
+    font-weight: 1000;
+    font-size: 1.2rem;
+}
+#calculator .text .current{
+    color: white;
+    font-weight: 1000;
+    font-size: 2.5rem;
+}
